@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+   width: auto;
+}
+
+.banner{
+    height: auto;
+    width: auto;
+    display: block;
+    text-align: center;
+    
+}
+.banner > .banner-img{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    max-width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: block;
+    background-color: rgb(115, 123, 131);
+}
+.footer > .desk-img{
+    width: 180px;
+    border-radius: 50%;
+    border: 8px solid rgb(64, 70, 77);
+    position: absolute;
+    left: 100px ;
+}
+.footer > .raphic-img{
+    width: 180px;
+    border-radius: 50%;
+    border: 8px solid rgb(64, 70, 77);
+    margin: 0 auto;
+}
+.footer > .person-img{
+    width: 180px;
+    border-radius: 50%;
+    border: 8px solid rgb(64, 70, 77);
+    position: absolute;
+    right: 100px ;
+}

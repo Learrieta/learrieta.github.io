@@ -17,7 +17,7 @@ nav a{
 }
 nav:hover{
     background-color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 #hero-msg h1, #hero-msg h4{
     text-align: center;
@@ -53,7 +53,7 @@ header{
 }
 .book:hover, .join:hover{
     background-color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .msg{
     background-color: #e25411;
@@ -66,9 +66,11 @@ footer{
 footer h3 a {
     text-decoration: none;
 }
+
 footer h3 a:hover{
-    text-decoration: none;
+    text-decoration: underline;
 }
+
 .logo{
     width: 80px;
 }
