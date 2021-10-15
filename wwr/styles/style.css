@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Stick+No+Bills:wght@800&display=swap');
 div {
     max-width: 1600px;
 }
@@ -10,14 +11,32 @@ nav {
     text-align: center;
   background-color: #e25411  ;
   color: white;
+  padding: 10px;
 }
 nav a{
     text-decoration: none;
     color: white;
+    padding: 35px;
 }
 nav:hover{
     background-color: black;
     text-decoration: underline;
+}
+.home-title{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 3em;
+    margin-top: 1opx;
+    color: #e25411;
+    
+}
+.more{
+    font-family: 'Stick No Bills', sans-serif;
+}
+ p{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+h4{
+    font-family: 'Barlow Condensed', sans-serif;
 }
 #hero-msg h1, #hero-msg h4{
     text-align: center;
@@ -28,27 +47,49 @@ nav:hover{
 main section{
     text-align: center;
 }
+main section img{
+    box-sizing: border-box;
+}
 
 #background{
     height: 725px;
     background-color: #396E94;
+    margin-bottom: 80px;
 }
 
 body{
     background-color: white ;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0;
 }
 header{
     background-color: #396E94;
+}
+.button-box{
+    margin-top: 40px;
 }
 .book{
     background-color: #e25411;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;;
+    margin-top: 60px;
+    border-radius: 5px;
+
 }
 .join{
   background-color: #396E94;
   color: white;
   text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
   
 }
 .book:hover, .join:hover{
@@ -57,14 +98,26 @@ header{
 }
 .msg{
     background-color: #e25411;
+    line-height: 1.5em;
+    padding: 35px;
+    margin-top: 100px;
+}
+.msg p{
+    padding-bottom: 15px;
 }
 footer{
     background-color: #396E94;
     color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
     
+}
+footer .social img{
+    padding-top: 15px;
 }
 footer h3 a {
     text-decoration: none;
+    color: white;
 }
 
 footer h3 a:hover{
@@ -73,9 +126,11 @@ footer h3 a:hover{
 
 .logo{
     width: 80px;
+    padding-top: 5px;
 }
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img{
     width: 100%;
@@ -83,6 +138,13 @@ footer h3 a:hover{
     margin-left: auto;
     margin-right: auto;
 
+    
+}
+.rivers-cards, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #78866B;
     
 }
 
