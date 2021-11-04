@@ -1,0 +1,166 @@
+
+body{
+    
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top: 30px;
+    text-align: center;
+    
+    
+}
+section{
+    border: solid rgb(131, 131, 131);
+    max-width: 500px;
+    margin: 50px auto;
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+
+}
+.title{
+    color: rgba(116, 114, 114, 0.623);
+    font-family: 'Actor';font-size: 26px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+    
+img{ 
+    width: 70%; 
+    height: 20%; 
+    padding: 40px;
+    grid-row: 1/2; 
+    margin-bottom:-90px;
+    margin-top:-30px; 
+}
+
+.sweet{ 
+    
+    font-family: 'Heebo', sans-serif;;
+    color: rgba(75, 74, 74, 0.623);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.model{ 
+    font-family: 'Heebo', sans-serif;
+    color: rgba(116, 114, 114, 0.623);
+    text-align: center;
+    font-size: 30px;
+    margin:0 auto; 
+    margin-top: 1px;
+    font-weight: lighter; 
+}
+.ok{ 
+    font-family: 'Heebo', sans-serif; 
+    background-color:#1596c5;
+    color:white;
+    border-radius: 5px;
+    border-color: black, 2px , ridge;
+    padding: 6px; 
+    height:40px;
+    width:120px;
+    margin-left: 35%;
+    box-shadow: 4px 4px #2e2e2e;
+}
+.last {
+    height: 300px;
+    width: 400px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.exit {
+    margin-top: -4%;
+    margin-left: 121%;
+    height: 15px;
+    color: rgb(100, 100, 100);
+}
+
+.last h2 {
+    font-family: 'Heebo', sans-serif;;
+    color: rgba(75, 74, 74, 0.623);
+    margin-left: 30%;
+}
+.last a{
+    font-family: 'Heebo', sans-serif;;
+    color: rgba(75, 74, 74, 0.623);
+    margin-left: 6px;
+}
+
+.last p a {
+    text-decoration: none;
+    color: #62a5f1;
+}
+p{
+    font-family: 'Heebo', sans-serif;;
+    color: rgba(75, 74, 74, 0.623);
+    margin-left: 40px;
+}
+
+#thumbup {
+    background-color: #4781d4;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    margin-left: 25%;
+}
+
+#thumbdown {
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #a9a9aa;
+    border: none;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #a2ddf6;
+    font-size: 80px;
+    color: #57aed3;
+    margin-left: 50%;
+}
+.icon {
+    max-width: 100px;
+    padding-bottom: 60px;
+}
+.button {
+    font-family: 'Heebo', sans-serif; 
+    background-color:#1596c5;
+    color:white;
+    border-radius: 5px;
+    border-color: black, 2px , ridge;
+    padding: 6px; 
+    height:40px;
+    width:120px;
+    margin-left: 35%;
+    box-shadow: 4px 4px #2e2e2e;
+}
+.ops{
+    font-family: 'Heebo', sans-serif;;
+    color: rgba(75, 74, 74, 0.623);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+
+}
+.wrong{
+    font-family: 'Heebo', sans-serif;
+    color: rgba(116, 114, 114, 0.623);
+    text-align: center;
+    font-size: 30px; 
+    font-weight: lighter; 
+    margin-top: -35px;
+
+}
