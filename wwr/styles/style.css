@@ -11,9 +11,9 @@ nav {
     display: flex;
     justify-content: space-around;
     text-align: center;
-  background-color: #396e9459 ;
-  color: white;
-  padding: 10px;
+    background-color: #396e9459 ;
+    color: white;
+    padding: 10px;
 
 }
 nav a{
@@ -95,13 +95,13 @@ header{
 
 }
 .join{
-  background-color: #396E94;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 15px 30px;
-  margin-top: 50px;
-  border-radius: 5px;
+    background-color: #396E94;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
   
 }
 .book:hover, .join:hover{
@@ -124,7 +124,7 @@ footer{
     background-color: #396E94;
     color: white;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -211,50 +211,182 @@ footer h3 a:hover{
     grid-row: 1/2;
     margin-top: 180px;
 }
-.home-grid{
+.Rate-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-@media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #hero {
-        margin-top: 0;
-    }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    .home-title {
-        font-size: 25px;
-        color: #6f7364;
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
-    #background {
-        display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    footer {
-        margin-top: 25px;
-    }
+h1{
+    font-family: 'Stick No Bills', sans-serif;
+    text-align: center;
+}
+
+.rates-title{
+    margin-top: -100px;
+    grid-column: 4/8;
+    grid-row: 1/2;
+    color: #396E94
+}
+.classic-img{
+    border: 10px solid #e25411;
+    height: 300px;
+    width: 300px;
+    transition: transform .5s; 
+    box-shadow: 5px 5px 10px#e25411;
+}
+.classic-cards{
+    grid-column: 6/11;
+    grid-row: 2;
+    margin-top: 50px;
+}
+.classic-title{
+    grid-column: 2/6;
+    grid-row: 2;
+    margin-top: 50px;
+}
+.classic-title1{
+    color: #e25411;
+}
+.classic-p{
+    color: #396E94;
+}
+.price{
+    margin-left: -260px;
+    color: #396E94;
+}
+.book-classic{
+    background-color: #e25411;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px 25px;;
+    margin-top: -180px;
+    border-radius: 5px;
+    font-family: 'Stick No Bills', sans-serif;
+}
+.button-classic{
+    margin-top: -50px;
+    margin-left: 50px;
+}
+.book-classic:hover{
+    background-color: #396E94;
+}
+.small-img{
+    border: 10px solid #e25411;
+    height: 300px;
+    width: 300px;
+    transition: transform .5s; 
+    box-shadow: 5px 5px 10px #e25411;
+}
+.small-card{
+    grid-column: 1/5;
+    grid-row: 3;
+    margin-top: 60px;
+}
+.small-title{
+    grid-column: 5/10;
+    grid-row: 3;
+    margin-top: 60px;
+}
+.small-title1{
+    color: #e25411;
+}
+.small-p{
+    color: #396E94;
+}
+.price-small{
+    margin-left: -300px;
+    color: #396E94;
+}
+.button-small{
+    margin-top: -55px;
+    margin-left: 100px;
+}
+.scenic-img{
+    border: 10px solid #e25411;
+    height: 300px;
+    width: 300px;
+    transition: transform .5s; 
+    box-shadow: 5px 5px 10px #e25411;
+}
+.scenic-card{
+    grid-column: 6/11;
+    grid-row: 4;
+    margin-top: 60px;
+}
+.scenic-title{
+    grid-column: 2/6;
+    grid-row: 4;
+    margin-top: 60px;
+}
+.scenic-title1{
+    color: #e25411;
+}
+.scenic-p{
+    color: #396E94;
+}
+.price-scenic{
+    margin-left: -250px;
+    color: #396E94;
+}
+.button-scenic{
+    margin-top: -55px;
+    margin-left: 100px;
+}
+#background-rates{
+    height: 300px;
+    background-color: #396E94;
+    margin-top: 40px;
+    grid-column: 1/11;
+    grid-row: 5;
+}
+.msg-rates{
+    background-color: #e25411;
+    padding: 20px;
+    margin-top: 50px;
+    grid-column: 6/10;
+    grid-row: 5;
+    box-shadow: 2px 2px 5px #6f7364;
+    height: 230px;
+    border-radius: 5px;
+}
+.msg-rates p{
+    padding-bottom: 5px;
+}
+.mountains-rates{
+    height: 200px;
+    width: 500px;
+    grid-column: 1/6;
+    grid-row: 5;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin-top: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.join-rates{
+    background-color: #396E94;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px 25px;;
+    margin-top: -180px;
+    border-radius: 5px;
+    font-family: 'Stick No Bills', sans-serif;
+  
+}
+.join-rates:hover{
+    background-color: black;
+}
+.classic-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+.small-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+.scenic-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
 }
 
 
