@@ -1,175 +1,292 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Stick+No+Bills:wght@800&display=swap') ;
-
-:root {
-  /* change the values below to your colors from your palette */
-  --primary-color: rgb(7, 82, 153)   ;
-  --secondary-color: #bb1717 ;
-  --accent1-color: #ff0000;
-  --accent2-color: white;
-
-  /* change the values below to your chosen font(s) */
-  --heading-font: Stick No Bills;
-  --paragraph-font: 'Barlow Condensed', sans-serif;
-
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #bb1717;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: rgb(7, 82, 153); /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: rgb(7, 82, 153) ;
-  --nav-link-color: rgb(7, 82, 153);
-  --nav-background-color: #bb1717;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: rgb(7, 82, 153);
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Stick+No+Bills:wght@800&display=swap');
+div {
+    max-width: 1600px;
 }
-
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
-}
-img {
+body{
   display: block;
-  margin: 0 auto;
+  margin: 0;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
+#content{
+    margin: 0 auto;
 }
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
-}
-
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
-  padding: 1em;
-}
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-.colors th {
-  background-color: rgb(255, 255, 255);
-}
-.colors td{
-  width: 25%;
-  height: 3em;
-}
-
-.primary {
-  background-color: var(--primary-color);
-}
-.secondary {
-  background-color: var(--secondary-color);
-}
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
-}
-
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
-
-nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
-nav  {
-  list-style-type: none;
-  display: flex;
-
-}
-nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
-
-}
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
-
-.sitemap {
+header{
   display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+  grid-template-columns: 150px auto;
+  background-color: rgb(7, 82, 153);
 }
-.sitemap > div {
-
+.logo{
+  width: 100px;
+  border-radius: 30px;
+}
+#logo_link{
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
   text-align: center;
+  background-color: rgb(7, 82, 153);
+  color: white;
+  padding: 10px;
+  font-family: Stick No Bills;
+  font-size: 24px;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  padding: 35px;
+}
+.index:hover{
+  border-radius: 20px;
+  background-color: #428dc2;
+  font-size: 120%;
+}
+.plans:hover{
+  border-radius: 20px;
+  background-color: #428dc2;
+  font-size: 120%;
+}
+.testimonials:hover{
+  border-radius: 20px;
+  background-color: #428dc2;
+  font-size: 120%;
+}
+.contactus:hover{
+  border-radius: 20px;
+  background-color: #428dc2;
+  font-size: 120%;
+}
+#background-video {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.home-grid{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+.home-title{
+  text-align: center;
+  font-family: Stick No Bills;
+  font-size: 50px;
+  color: #bb1717;
+}
+.card-img{
+  width: 100px;
+  height: 100px;
+}
+.time-video{
+  grid-column: 4/7;
+}
+.video {
+  width: 100%;
+  height: 100px;
+}
+footer{
+  background-color: rgb(7, 82, 153);
+  color: white;
+  padding: 20px 50px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Stick No Bills;
+  font-size: 24px;
+  
+}
+.sitefooter:hover{
+  text-decoration: underline;
+  font-size: 120%;
+}
+.contactusfooter:hover{
+  text-decoration: underline;
+  font-size: 120%;
+}
+footer .social img{
+  padding-top: 15px;
+}
+footer h3 a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+.container{
+  width: 80%;
+  margin: 50px auto;
+}
+.contact-box{
+  background: #fff;
+  display: flex;
+  border: 5px solid rgb(182, 178, 178);
+  border-radius: 10px;
+}
+.request{
+  font-family: Stick No Bills;
+  font-size: 22px;
+  color: #bb1717;
+  font-weight: 600;
+  margin-bottom: 30px ;
 
 }
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
+.contact-left{
+  flex-basis: 60%;
+  padding: 40px 60px;
 }
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
+.contact-right{
+  flex-basis: 40%;
+  padding: 40px;
+  background: rgb(7, 82, 153);
+  color: #fff
 }
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
-}
+.reach{
+  font-family: Stick No Bills;
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 30px ;
 
-.top {
-  grid-area: top;
-  border-left: 1px solid;
 }
+.contactus-title{
+  margin-bottom: 10px;
+  font-family: Stick No Bills;
+  color: #bb1717;
+  font-size: 35px;
+}
+.contactus-paragraph{
+  margin-bottom: 40px;
+  font-family: 'Barlow Condensed', sans-serif; 
+  font-size: 20px;
+}
+.input-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
 }
+.input-row .input-group{
+  flex-basis: 45%;
+}
+input{
+  width: 100%;
+  border: 2px solid rgb(143, 137, 137);
+  border-radius: 5px;
+  outline: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+textarea{
+  width: 100%;
+  border: 2px solid rgb(143, 137, 137);
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+label{
+  margin-bottom: 6px;
+  display: block;
+  color: black;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 17px;
+}
+button{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  margin-left: 40%;
+  background: #bb1717;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 35px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0px 5px 15px 0px rgb(155, 42, 42);
+}
+tr td:first-child{
+  padding-right: 20px;
+}
+tr td{
+  padding-top: 20px ;
+  font-size: 20px;
+}
+.testimonials-class{
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: -30px;
+}
+.testimonials-title{
+  font-family: Stick No Bills;
+  font-size: 40px;
+  color: #bb1717;
 
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
 }
+.slideshow-container {
+  margin-top: 50px;
+  position: relative;
+  background: #f1f1f1f1;
+}
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+q {font-style: italic;}
+.author {color: cornflowerblue;}
+
+
+
+
+
+
+
