@@ -68,26 +68,133 @@ nav a{
   bottom: 0;
   z-index: -1;
 }
-.home-grid{
-  display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-}
+
 .home-title{
   text-align: center;
   font-family: Stick No Bills;
   font-size: 50px;
-  color: #bb1717;
+  color: rgb(155, 42, 42);
 }
+.home-p{
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 90px;
+  margin-top: -30px;
+  font-size: 23px ;
+}
+.home-grid{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 .card-img{
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  border: 8px solid rgb(7, 82, 153);
+  border-radius: 20px;
+  transition: transform .5s; 
+  box-shadow: 5px 5px 10px rgb(84, 129, 172);
 }
+.card-img:hover{
+  opacity: .6;
+  transform: scale(1.1);
+}
+.button1{
+  font-family: Stick No Bills;
+  font-size: 28px;
+  color: rgb(7, 82, 153);
+  text-decoration: none;
+  grid-column: 2/4;
+  grid-row: 2;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.button1:hover{
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #bb1717;
+  color: white;
+}
+.button2{
+  font-family: Stick No Bills;
+  font-size: 28px;
+  color: rgb(7, 82, 153);
+  text-decoration: none;
+  grid-column: 5/7;
+  grid-row: 2;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.button2:hover{
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #bb1717;
+  color: white;
+}
+.button3{
+  font-family: Stick No Bills;
+  font-size: 28px;
+  color: rgb(7, 82, 153);
+  text-decoration: none;
+  grid-column: 8/10;
+  grid-row: 2;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.button3:hover{
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #bb1717;
+  color: white;
+}
+.football-card{
+  grid-column: 2/4;
+  grid-row: 1/2;
+  margin-left: -30px;
+  text-align: center;
+}
+.soccer-card{
+  grid-column: 5/7;
+  grid-row: 1/2;
+  margin-left: -30px;
+  text-align: center;
+}
+.voleyball-card{
+  grid-column: 8/10;
+  grid-row: 1/2;
+  margin-left: -30px;
+  text-align: center;
+}
+.msg{
+  grid-row: 3/4;
+  grid-column: 2/6;
+  margin-left: -15%;
+}
+.more{
+  font-family: Stick No Bills;
+  font-size: 40px;
+  color: rgb(155, 42, 42);
+}
+.mission{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 25px;
+}
+
 .time-video{
-  grid-column: 4/7;
+  grid-column: 6/11;
+  grid-row: 3;
+  margin-top: 10%;
+  margin-left: 50px;
 }
 .video {
-  width: 100%;
-  height: 100px;
+  width: 95%;
+  border-radius: 30px;
+  border: 15px solid rgb(7, 82, 153);
+  background: rgb(7, 82, 153);
 }
 footer{
   background-color: rgb(7, 82, 153);
