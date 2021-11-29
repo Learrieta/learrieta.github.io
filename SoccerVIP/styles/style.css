@@ -38,6 +38,12 @@ nav a{
   color: white;
   padding: 35px;
 }
+.text1 {
+  margin-top: 30px;
+  width: 300px;
+  height: 25px;
+  margin-right: -90px;
+}
 .index:hover{
   border-radius: 20px;
   background-color: #428dc2;
